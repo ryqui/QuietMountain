@@ -10,7 +10,7 @@ public class PlayerMoveState : PlayerBaseState
     public PlayerMoveState(PlayerStateMachine stateMachine) : base(stateMachine) {}
 
     public override void Enter()
-    {
+    {   
         stateMachine.Velocity.y = Physics.gravity.y;
 
         stateMachine.Animator.CrossFadeInFixedTime(MoveBlendTreeHash, CrossFadeDuration);
@@ -18,20 +18,25 @@ public class PlayerMoveState : PlayerBaseState
         //stateMachine.InputReader.OnJumpPerformed += SwitchToJumpState;
     }
 
-    public override void Tick()
-    {
-        /*if (!stateMachine.Controller.isGrounded)
+public override void Tick()
+{
+      
+    /*if (!stateMachine.Controller.isGrounded)
         {
             stateMachine.SwitchState(new PlayerFallState(stateMachine));
         }*/
+    CalculateMoveDirection();
+    FaceMoveDirection();
 
-        CalculateMoveDirection();
-        FaceMoveDirection();
-        Move();
+    // Press Right Shift to Sprint
+    stateMachine.MovementSpeed= Input.GetKey(KeyCode.RightShift) ? stateMachine.SprintSpeed : stateMachine.DefaultSpeed;
+    Move();
 
-        stateMachine.Animator.SetFloat(MoveSpeedHash, stateMachine.InputReader.MoveComposite.sqrMagnitude > 0f ? 1f : 0f, AnimationDampTime, Time.deltaTime);
-    }
+    stateMachine.Animator.SetFloat(MoveSpeedHash, stateMachine.InputReader.MoveComposite.sqrMagnitude > 0f ? 1f : 0f, AnimationDampTime, Time.deltaTime);
+}
 
+
+  
     public override void Exit()
     {
         //stateMachine.InputReader.OnJumpPerformed -= SwitchToJumpState;
