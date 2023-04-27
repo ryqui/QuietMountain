@@ -6,8 +6,10 @@ using UnityEngine;
 public class PlayerStateMachine : StateMachine
 {
     public Vector3 Velocity;
-    public float MovementSpeed { get; private set; } = 5f;
-    public float SprintSpeed { get; private set; } = 8f;
+    public float MovementSpeed { get;  set; } = 5f;
+    public float DefaultSpeed { get;  private set; } 
+    public float SprintSpeed { get; private set; } = 10f;
+
     public float LookRotationDampFactor { get; private set; } = 10f;
     public Transform MainCamera { get; private set; }
     public InputReader InputReader { get; private set; }
@@ -15,7 +17,8 @@ public class PlayerStateMachine : StateMachine
     public CharacterController Controller { get; private set; }
 
     void Start()
-    {
+    {  
+        DefaultSpeed = MovementSpeed ;
         MainCamera = Camera.main.transform;
 
         InputReader = GetComponent<InputReader>();
