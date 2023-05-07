@@ -30,7 +30,10 @@ public class InputReader : MonoBehaviour, Controls.IPlayerActions
     }
 
     public void OnInteract(InputAction.CallbackContext context){
-        interact = true;
+        if (context.performed)
+            interact = true;
+        else if (context.canceled)
+            interact = false;
     }
 
     public void OnSprint(InputAction.CallbackContext context){
