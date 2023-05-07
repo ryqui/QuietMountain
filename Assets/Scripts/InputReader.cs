@@ -6,8 +6,7 @@ public class InputReader : MonoBehaviour, Controls.IPlayerActions
 {
     public Vector2 MouseDelta;
     public Vector2 MoveComposite;
-
-    public Action OnJumpPerformed;
+    public bool interact;
 
     private Controls controls;
 
@@ -28,7 +27,7 @@ public class InputReader : MonoBehaviour, Controls.IPlayerActions
     }
 
     public void OnInteract(InputAction.CallbackContext context){
-        return;
+        interact = true;
     }
 
     public void OnSprint(InputAction.CallbackContext context){
