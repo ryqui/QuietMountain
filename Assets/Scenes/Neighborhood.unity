@@ -379,7 +379,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 35421168}
-  m_LocalRotation: {x: 0.08737196, y: 0.70326954, z: -0.08777342, w: 0.70005286}
+  m_LocalRotation: {x: 0.08737172, y: 0.70327145, z: -0.08777366, w: 0.70005095}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5616,7 +5616,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 577271882}
-  m_LocalRotation: {x: 0.11462031, y: 0.70027065, z: -0.11547476, w: 0.69508904}
+  m_LocalRotation: {x: 0.11461982, y: 0.70027363, z: -0.11547525, w: 0.6950861}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6995,6 +6995,7 @@ MonoBehaviour:
   MouseDelta: {x: 0, y: 0}
   MoveComposite: {x: 0, y: 0}
   interact: 0
+  isSprinting: 0
 --- !u!95 &605329452
 Animator:
   serializedVersion: 4
@@ -7489,7 +7490,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 915947009}
-  m_LocalRotation: {x: 0.1532187, y: 0.6914686, z: -0.15376261, w: 0.6890228}
+  m_LocalRotation: {x: 0.1532184, y: 0.69147, z: -0.1537629, w: 0.68902135}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8108,7 +8109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightObject: {fileID: 1802048758}
-  light: {fileID: 1802048759}
+  lightSource: {fileID: 0}
   DisableOnCollide: 0
   animator: {fileID: 605329452}
 --- !u!65 &1309662493
@@ -8684,7 +8685,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1651503225}
-  m_LocalRotation: {x: 0.114620306, y: 0.70027065, z: -0.11547476, w: 0.69508904}
+  m_LocalRotation: {x: 0.11461983, y: 0.70027363, z: -0.11547525, w: 0.69508606}
   m_LocalPosition: {x: -25.169998, y: 7.758, z: 0.56999946}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8963,7 +8964,7 @@ Light:
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
-    m_NearPlane: 0.25
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -9359,3 +9360,4 @@ MonoBehaviour:
   MouseDelta: {x: 0, y: 0}
   MoveComposite: {x: 0, y: 0}
   interact: 0
+  isSprinting: 0
