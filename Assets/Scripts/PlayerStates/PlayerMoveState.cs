@@ -20,7 +20,7 @@ public class PlayerMoveState : PlayerBaseState
 
 public override void Tick()
 {
-      
+    
     /*if (!stateMachine.Controller.isGrounded)
         {
             stateMachine.SwitchState(new PlayerFallState(stateMachine));
@@ -29,7 +29,7 @@ public override void Tick()
     FaceMoveDirection();
 
     // Press Right Shift to Sprint
-    stateMachine.MovementSpeed= Input.GetKey(KeyCode.RightShift) ? stateMachine.SprintSpeed : stateMachine.DefaultSpeed;
+    stateMachine.MovementSpeed = stateMachine.InputReader.isSprinting ? stateMachine.SprintSpeed : stateMachine.DefaultSpeed;
     Move();
 
     stateMachine.Animator.SetFloat(MoveSpeedHash, stateMachine.InputReader.MoveComposite.sqrMagnitude > 0f ? 1f : 0f, AnimationDampTime, Time.deltaTime);
