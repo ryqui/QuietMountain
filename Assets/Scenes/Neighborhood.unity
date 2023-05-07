@@ -15,7 +15,7 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 1
-  m_FogColor: {r: 0.8867924, g: 0.8867924, b: 0.8867924, a: 1}
+  m_FogColor: {r: 0.45098042, g: 0.41176474, b: 0.48235297, a: 1}
   m_FogMode: 1
   m_FogDensity: 0.05
   m_LinearFogStart: 22
@@ -236,9 +236,9 @@ MonoBehaviour:
   m_SplineCurvature: 0.2
   m_Orbits:
   - m_Height: 6.5
-    m_Radius: 12
+    m_Radius: 8.5
   - m_Height: 6.25
-    m_Radius: 11
+    m_Radius: 9
   - m_Height: 6
     m_Radius: 10
   m_LegacyHeadingBias: 3.4028235e+38
@@ -254,7 +254,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 23621343}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.538919, y: 7.758, z: -6.179}
+  m_LocalPosition: {x: -14.538919, y: 7.758, z: -4.179}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -379,7 +379,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 35421168}
-  m_LocalRotation: {x: 0.093806244, y: 0.0026832141, z: -0.000252818, w: 0.9955869}
+  m_LocalRotation: {x: 0.123846374, y: 0.0024953939, z: -0.0003114441, w: 0.99229825}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5489,7 +5489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 6.25, z: -11}
+  m_FollowOffset: {x: 0, y: 6.25, z: -9}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -5611,7 +5611,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 577271882}
-  m_LocalRotation: {x: 0.13281366, y: 0.004327272, z: -0.0005798633, w: 0.9911314}
+  m_LocalRotation: {x: 0.1627015, y: 0.0040195202, z: -0.00066281937, w: 0.9866669}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6201,7 +6201,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 915947009}
-  m_LocalRotation: {x: 0.18747354, y: 0.0020462265, z: -0.0003905385, w: 0.9822675}
+  m_LocalRotation: {x: 0.21706845, y: 0.0018974062, z: -0.00042192813, w: 0.97615445}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7025,7 +7025,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 6.25, z: -11}
+  m_FollowOffset: {x: 0, y: 6.25, z: -9}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -7152,7 +7152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 6.25, z: -11}
+  m_FollowOffset: {x: 0, y: 6.25, z: -9}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -7282,8 +7282,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1651503225}
-  m_LocalRotation: {x: 0.13281368, y: 0.0043272725, z: -0.00057986355, w: 0.9911314}
-  m_LocalPosition: {x: -14.538919, y: 7.758, z: -6.179}
+  m_LocalRotation: {x: 0.1627015, y: 0.0040195207, z: -0.0006628195, w: 0.986667}
+  m_LocalPosition: {x: -14.538919, y: 7.758, z: -4.179}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7627,7 +7627,7 @@ GameObject:
   - component: {fileID: 1854529136}
   - component: {fileID: 1854529140}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: FogSkyDome
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
