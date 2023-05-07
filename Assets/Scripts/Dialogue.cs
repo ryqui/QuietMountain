@@ -6,21 +6,23 @@ using TMPro;
 public class Dialogue : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
-    private string [] lines ={ "HELLO WE ARE HERblibhbkhhjvjvjvhvlhjvjv hkjhkhvj hbhbhbjhhbjhbh jbhbhbhbhjbjhbhj eeeeeeeeeekklkmlkmE","NEVERMIND WE ARE HER","HOT","POT"}; 
+    public string [] lines ; 
     public float textSpeed;
     private int index;
+    private bool collide = false;
     
-    // Start is called before the first frame update
-    void Start()
-    { 
-        textComponent.text= string.Empty;
-        StartDialogue();   
+    
+  void OnTriggerEnter(Collider other)
+    {      textComponent.text= string.Empty;
+        if (other.CompareTag("Player")) 
+        {  collide = true;
+            StartDialogue();}
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0) && collide)
         {
             if(textComponent.text == lines[index])
             {
@@ -58,7 +60,7 @@ void NextLine()
         StartCoroutine(TypeLine());
     }
     else
-    {
+    {   textComponent.text= string.Empty;
         gameObject.SetActive(false);
     }
 
