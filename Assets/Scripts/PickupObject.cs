@@ -18,7 +18,9 @@ public class PickupObject : MonoBehaviour
 
     void OnTriggerStay(Collider collider){
         if (collider.name == "Player")
-            if (InputReader.interact == true)
+            if (InputReader.interact == true){
                 gameObject.SetActive(false);
+                InputReader.interact = false;
+            }
     }
 }
