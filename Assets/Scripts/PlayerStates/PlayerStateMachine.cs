@@ -9,7 +9,7 @@ public class PlayerStateMachine : StateMachine
     public float MovementSpeed { get;  set; } = 5f;
     public float DefaultSpeed { get;  private set; } 
     public float SprintSpeed { get; private set; } = 10f;
-
+    public static int Hp { get;  set; } = 100;
     public float LookRotationDampFactor { get; private set; } = 10f;
     public Transform MainCamera { get; private set; }
     public InputReader InputReader { get; private set; }
@@ -27,4 +27,13 @@ public class PlayerStateMachine : StateMachine
 
         SwitchState(new PlayerMoveState(this));
     }
+
+
+    public static void TakeDamage(int damage){
+        Hp-= damage; 
+        if(Hp <= 0)
+         GameObject.FindGameObjectWithTag("Player").SetActive(false); 
+
+    }
+    
 }

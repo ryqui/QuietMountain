@@ -112,7 +112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 0}
   lines:
-  - dfbd
-  - ergregregr
+  - Hello Harry
+  - Cher
   - ergerre
   textSpeed: 0.1
