@@ -6,8 +6,8 @@ public class InputReader : MonoBehaviour, Controls.IPlayerActions
 {
     public Vector2 MouseDelta;
     public Vector2 MoveComposite;
-
-    public Action OnJumpPerformed;
+    public bool interact;
+    public bool isSprinting;
 
     private Controls controls;
 
@@ -17,6 +17,8 @@ public class InputReader : MonoBehaviour, Controls.IPlayerActions
         controls = new Controls();
         controls.Player.SetCallbacks(this);
         controls.Player.Enable();
+        interact = false;
+        isSprinting = false;
     }
 
     public void OnDisable(){
@@ -28,12 +30,17 @@ public class InputReader : MonoBehaviour, Controls.IPlayerActions
     }
 
     public void OnInteract(InputAction.CallbackContext context){
-        return;
+        if (context.performed)
+            interact = true;
+        else if (context.canceled)
+            interact = false;
     }
 
     public void OnSprint(InputAction.CallbackContext context){
-        if (!context.performed) return;
-        return;
+        if (context.performed)
+            isSprinting = true;
+        else if (context.canceled)
+            isSprinting = false;
     }
 
     public void OnLook(InputAction.CallbackContext context){

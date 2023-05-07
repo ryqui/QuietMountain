@@ -6,23 +6,21 @@ using TMPro;
 public class Dialogue : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
-    public string [] lines ; 
+    private string [] lines ={ "HELLO WE ARE HERblibhbkhhjvjvjvhvlhjvjv hkjhkhvj hbhbhbjhhbjhbh jbhbhbhbhjbjhbhj eeeeeeeeeekklkmlkmE","NEVERMIND WE ARE HER","HOT","POT"}; 
     public float textSpeed;
     private int index;
-    private bool collide = false;
     
-
-  void OnTriggerEnter(Collider other)
-    {      textComponent.text= string.Empty;
-        if (other.CompareTag("Player")) 
-        {  collide = true;
-            StartDialogue();}
+    // Start is called before the first frame update
+    void Start()
+    { 
+        textComponent.text= string.Empty;
+        StartDialogue();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0) && collide)
+        if(Input.GetMouseButtonDown(0))
         {
             if(textComponent.text == lines[index])
             {
@@ -38,8 +36,8 @@ public class Dialogue : MonoBehaviour
 
     void StartDialogue()
     {   index =0;
- 
         StartCoroutine(TypeLine());
+        
     }
 
     IEnumerator TypeLine()
@@ -51,19 +49,17 @@ public class Dialogue : MonoBehaviour
         }
     }
 
-void NextLine()
-{
-    if(index<lines.Length-1)
+    void NextLine()
     {
-        index++;
-        textComponent.text= string.Empty;
-        StartCoroutine(TypeLine());
+        if(index<lines.Length-1)
+        {
+            index++;
+            textComponent.text= string.Empty;
+            StartCoroutine(TypeLine());
+        }
+        else
+        {
+            gameObject.SetActive(false);
+        }
     }
-    else
-    {   textComponent.text= string.Empty;
-        gameObject.SetActive(false);
-    }
-
-}
-
 }
