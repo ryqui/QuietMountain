@@ -19,7 +19,7 @@ public class PlayerStateMachine : StateMachine
 
     void Start()
     {  
-        DefaultSpeed = MovementSpeed ;
+        DefaultSpeed = MovementSpeed;
         MainCamera = Camera.main.transform;
 
         InputReader = GetComponent<InputReader>();
