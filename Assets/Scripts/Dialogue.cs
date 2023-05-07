@@ -11,7 +11,7 @@ public class Dialogue : MonoBehaviour
     private int index;
     private bool collide = false;
     
-    
+
   void OnTriggerEnter(Collider other)
     {      textComponent.text= string.Empty;
         if (other.CompareTag("Player")) 
@@ -38,8 +38,8 @@ public class Dialogue : MonoBehaviour
 
     void StartDialogue()
     {   index =0;
+ 
         StartCoroutine(TypeLine());
-        
     }
 
     IEnumerator TypeLine()
