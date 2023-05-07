@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(InputReader))]
-public class OpenDoor : MonoBehaviour
+public class OpenGate : MonoBehaviour
 {
     public InputReader InputReader { get; private set; }
     private bool isOpen;
@@ -43,3 +43,4 @@ public class OpenDoor : MonoBehaviour
         gameObject.GetComponent<Collider>().enabled = true;
     }
 }
+ 
