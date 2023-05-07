@@ -7,6 +7,7 @@ public class PlayerStateMachine : StateMachine
 {
     public Vector3 Velocity;
     public float MovementSpeed { get;  set; } = 5f;
+    public static int Hp { get;  set; } = 100;
     public float DefaultSpeed { get;  private set; } 
     public float SprintSpeed { get; private set; } = 10f;
 
@@ -26,5 +27,12 @@ public class PlayerStateMachine : StateMachine
         Controller = GetComponent<CharacterController>();
 
         SwitchState(new PlayerMoveState(this));
+    }
+
+    public static void TakeDamage(int damage){
+        Hp-= damage; 
+        if(Hp <= 0)
+         GameObject.FindGameObjectWithTag("Player").SetActive(false); 
+
     }
 }
