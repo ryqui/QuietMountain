@@ -10,6 +10,7 @@ public class EnemyMovement : StateMachineBehaviour
     Transform player; 
     List<Transform> wayPoints = new List<Transform>();
     NavMeshAgent agent; 
+   
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {   timer=0;
@@ -41,6 +42,7 @@ public class EnemyMovement : StateMachineBehaviour
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
          agent.SetDestination(agent.transform.position);
+        
         
     }
 
