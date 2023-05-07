@@ -5,26 +5,23 @@ using UnityEngine;
 public class FollowPlayer : MonoBehaviour 
 {    
     public Transform leader;
-    public float followSharpness = 0.1f;
 
     Vector3 _followOffset;
 
     void Start()
     {
         leader = GameObject.Find("Player").transform;
-        // Cache the initial offset at time of load/spawn:
+        //initial offset
         _followOffset = transform.position - leader.position;
     }
 
     void LateUpdate () 
     {
-        // Apply that offset to get a target position.
         Vector3 targetPosition = leader.position + _followOffset;
-
-        // Keep our y position unchanged.
+        
+        //Keep y position the same
         targetPosition.y = transform.position.y;
 
-        // Smooth follow.    
-        transform.position += (targetPosition - transform.position) * followSharpness;
+        transform.position += targetPosition - transform.position;
     }
 }
