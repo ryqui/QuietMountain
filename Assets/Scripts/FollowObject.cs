@@ -12,6 +12,7 @@ public class FollowObject : MonoBehaviour
     {
         //initial offset
         transform.position = leader.position;
+        _followOffset = new Vector3(1f, 0f, 0f);
     }
 
     void LateUpdate () 
