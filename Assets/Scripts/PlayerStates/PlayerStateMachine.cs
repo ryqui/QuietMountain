@@ -30,7 +30,7 @@ public class PlayerStateMachine : StateMachine
 
 
     public static void TakeDamage(int damage){
-        Hp-= damage; 
+        Hp -= damage; 
         if(Hp <= 0)
          GameObject.FindGameObjectWithTag("Player").SetActive(false); 
 
