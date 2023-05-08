@@ -1,4 +1,5 @@
 using UnityEngine;
+using Cinemachine;
 
 [RequireComponent(typeof(InputReader))]
 [RequireComponent(typeof(Animator))]
@@ -9,12 +10,14 @@ public class PlayerStateMachine : StateMachine
     public float MovementSpeed { get;  set; } = 5f;
     public float DefaultSpeed { get;  private set; } 
     public float SprintSpeed { get; private set; } = 7f;
-    public static int Hp { get;  set; } = 100;
+    public static int Hp { get;  set; } = 1;
     public float LookRotationDampFactor { get; private set; } = 10f;
     public Transform MainCamera { get; private set; }
     public InputReader InputReader { get; private set; }
     public Animator Animator { get; private set; }
     public CharacterController Controller { get; private set; }
+    [SerializeField]
+    private CinemachineFreeLook freeLook;
 
     void Start()
     {  
@@ -36,4 +39,14 @@ public class PlayerStateMachine : StateMachine
 
     }
     
+    public void StartCutscene(){
+        Debug.Log("Disabling player movement.");
+        Vector3 prevVelocity = Velocity;
+        float prevDefaultSpeed = DefaultSpeed;
+        MovementSpeed = 0f;
+        DefaultSpeed = 0f;
+        SprintSpeed = 0f;
+        Velocity = new Vector3(0f,0f,0f);
+        freeLook.enabled = false;
+    }
 }
