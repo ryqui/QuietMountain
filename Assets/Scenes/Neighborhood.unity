@@ -187,9 +187,73 @@ PrefabInstance:
       propertyPath: m_Name
       value: Harry
       objectReference: {fileID: 0}
+    - target: {fileID: 2908252914937804549, guid: 184826390d35f7844b01203a3f139995, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6994413
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908252914937804549, guid: 184826390d35f7844b01203a3f139995, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.08729561
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908252914937804549, guid: 184826390d35f7844b01203a3f139995, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70387775
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908252914937804549, guid: 184826390d35f7844b01203a3f139995, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.08784932
+      objectReference: {fileID: 0}
     - target: {fileID: 2908252915130495732, guid: 184826390d35f7844b01203a3f139995, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.0000019073486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908252915130495732, guid: 184826390d35f7844b01203a3f139995, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6885581
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908252915130495732, guid: 184826390d35f7844b01203a3f139995, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.15311538
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908252915130495732, guid: 184826390d35f7844b01203a3f139995, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6919313
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908252915130495732, guid: 184826390d35f7844b01203a3f139995, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.15386547
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908252915471267003, guid: 184826390d35f7844b01203a3f139995, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.69410247
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908252915471267003, guid: 184826390d35f7844b01203a3f139995, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.114457615
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908252915471267003, guid: 184826390d35f7844b01203a3f139995, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908252915471267003, guid: 184826390d35f7844b01203a3f139995, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.11563599
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908252916545436811, guid: 184826390d35f7844b01203a3f139995, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.69410247
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908252916545436811, guid: 184826390d35f7844b01203a3f139995, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.11445761
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908252916545436811, guid: 184826390d35f7844b01203a3f139995, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7012486
+      objectReference: {fileID: 0}
+    - target: {fileID: 2908252916545436811, guid: 184826390d35f7844b01203a3f139995, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.11563601
       objectReference: {fileID: 0}
     - target: {fileID: 2908252916545436812, guid: 184826390d35f7844b01203a3f139995, type: 3}
       propertyPath: near clip plane
@@ -197,11 +261,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3513846519650285025, guid: 184826390d35f7844b01203a3f139995, type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3513846519650285025, guid: 184826390d35f7844b01203a3f139995, type: 3}
+      propertyPath: m_ApplyRootMotion
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4289784637419368286, guid: 184826390d35f7844b01203a3f139995, type: 3}
+      propertyPath: m_Name
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7867941171935611611, guid: 184826390d35f7844b01203a3f139995, type: 3}
       propertyPath: m_Name
-      value: Player
+      value: PlayerGroup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

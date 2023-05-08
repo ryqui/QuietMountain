@@ -14,11 +14,11 @@ public class EnableNight : MonoBehaviour
         lightObject = GameObject.Find("Lighter");
         lightSource = lightObject.GetComponent<Light>();
         collided = false;
-        animator = GameObject.Find("PlayerGroup").GetComponent<Animator>();
+        animator = GameObject.Find("Player").GetComponent<Animator>();
     }
     
     void OnTriggerEnter(Collider collider){
-        if (collided == false && collider.name == "PlayerGroup"){
+        if (collided == false && collider.name == "Player"){
             StartCoroutine(ChangeLight());
             
             if (DisableOnCollide == true)

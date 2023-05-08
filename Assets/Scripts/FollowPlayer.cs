@@ -8,7 +8,7 @@ public class FollowPlayer : MonoBehaviour
 
     void Start()
     {
-        leader = GameObject.Find("PlayerGroup").transform;
+        leader = GameObject.Find("Player").transform;
         //transform.position = new Vector3(leader.transform.position.x, transform.position.y, leader.transform.position.z);
         //initial offset
         transform.position = new Vector3(leader.transform.position.x, transform.position.y, leader.transform.position.z);

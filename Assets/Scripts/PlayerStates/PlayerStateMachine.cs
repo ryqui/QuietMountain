@@ -8,7 +8,7 @@ public class PlayerStateMachine : StateMachine
     public Vector3 Velocity;
     public float MovementSpeed { get;  set; } = 5f;
     public float DefaultSpeed { get;  private set; } 
-    public float SprintSpeed { get; private set; } = 10f;
+    public float SprintSpeed { get; private set; } = 7f;
     public static int Hp { get;  set; } = 100;
     public float LookRotationDampFactor { get; private set; } = 10f;
     public Transform MainCamera { get; private set; }
