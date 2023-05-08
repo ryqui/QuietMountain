@@ -1,0 +1,389 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2580151788338473461
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2581388359682083224}
+  m_Layer: 0
+  m_Name: (NS)Dialogues
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2581388359682083224
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2580151788338473461}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 26.78131, y: 7.0676756, z: -20.567123}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3658514678410251026}
+  - {fileID: 3658514678568978351}
+  - {fileID: 3658514677840344677}
+  - {fileID: 3658514677078494514}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &8245348722012064934
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 2581388359682083224}
+    m_Modifications:
+    - target: {fileID: 1038566712044164884, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: textSpeed
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038566712044164884, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038566712044164884, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: ' Where are you going?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038566712044164884, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: Hey wait...stop!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038566712044164884, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: lines.Array.data[2]
+      value: It's quiet. Too quiet.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038566712044164884, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: lines.Array.data[3]
+      value: 'This place is like a ghost town. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.4513092
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.037676
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.18287659
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6855855949636049135, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_Name
+      value: Dialogue  (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+--- !u!4 &3658514677078494514 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+  m_PrefabInstance: {fileID: 8245348722012064934}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8245348722908133361
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 2581388359682083224}
+    m_Modifications:
+    - target: {fileID: 1038566712044164884, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: textSpeed
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038566712044164884, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: lines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038566712044164884, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: 'Cheryl?  \n  Is that Cheryl!? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038566712044164884, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: It's strange...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038566712044164884, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: lines.Array.data[2]
+      value: It's quiet. Too quiet.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038566712044164884, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: lines.Array.data[3]
+      value: 'This place is like a ghost town. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.4513092
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.037676
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.307123
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6855855949636049135, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_Name
+      value: Dialogue  (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+--- !u!4 &3658514677840344677 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+  m_PrefabInstance: {fileID: 8245348722908133361}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8245348723236341307
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 2581388359682083224}
+    m_Modifications:
+    - target: {fileID: 1038566712044164884, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: textSpeed
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038566712044164884, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: lines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038566712044164884, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: Footsteps?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038566712044164884, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: It's strange...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038566712044164884, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: lines.Array.data[2]
+      value: It's quiet. Too quiet.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038566712044164884, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: lines.Array.data[3]
+      value: 'This place is like a ghost town. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -25.03131
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.5656614
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 25.267124
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6855855949636049135, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_Name
+      value: Dialogue  (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+--- !u!4 &3658514678568978351 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+  m_PrefabInstance: {fileID: 8245348723236341307}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8245348723343952518
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 2581388359682083224}
+    m_Modifications:
+    - target: {fileID: 1038566712044164884, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: textSpeed
+      value: 0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038566712044164884, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: lines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038566712044164884, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: Cheryl. Where could you be?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038566712044164884, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: It's strange...
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038566712044164884, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: lines.Array.data[2]
+      value: It's quiet. Too quiet.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038566712044164884, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: lines.Array.data[3]
+      value: 'This place is like a ghost town. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -39.53131
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.5656614
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 25.267124
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6855855949636049135, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+      propertyPath: m_Name
+      value: 'Dialogue '
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+--- !u!4 &3658514678410251026 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4659250122848272788, guid: 5e26a4fbb855749178c7ca90f17a31c4, type: 3}
+  m_PrefabInstance: {fileID: 8245348723343952518}
+  m_PrefabAsset: {fileID: 0}
