@@ -913,7 +913,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 872632277}
     - target: {fileID: 8936520543928639717, guid: a3ad0e79626b74ee08ce4b932d98a7d1, type: 3}
+      propertyPath: lines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936520543928639717, guid: a3ad0e79626b74ee08ce4b932d98a7d1, type: 3}
       propertyPath: lines.Array.data[0]
+      value: 'Cheryl? \Is that Cheryl!? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936520543928639717, guid: a3ad0e79626b74ee08ce4b932d98a7d1, type: 3}
+      propertyPath: lines.Array.data[1]
       value: 'Cheryl?  Is that Cheryl!? '
       objectReference: {fileID: 0}
     - target: {fileID: 8936520544431578514, guid: a3ad0e79626b74ee08ce4b932d98a7d1, type: 3}

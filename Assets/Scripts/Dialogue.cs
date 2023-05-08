@@ -24,27 +24,30 @@ public class Dialogue : MonoBehaviour
         textComponent.text= string.Empty;
         if (other.CompareTag("Player")) 
         {  collide = true;
-            col.isTrigger = stopMovement ? false : true ;
+            col.isTrigger =  stopMovement ? false : true ;
             StartDialogue();}
     }
 
     // Update is called once per frame
-    void Update()
+  void Update()
+{
+    if(InputReader.interact == true && collide)
     {
-        if(InputReader.interact == true && collide)
+        if(textComponent.text == lines[index])
         {
-            if(textComponent.text == lines[index])
-            {
-                NextLine();
-            }
-            else
-            {
-                StopAllCoroutines();
-                textComponent.text=lines[index];
-            }
-            InputReader.interact = false;
+            NextLine();
         }
+        else
+        {
+            StopAllCoroutines();
+            textComponent.text=lines[index];
+        }
+       
+
+        InputReader.interact = false;
     }
+}
+
 
     void StartDialogue()
     {   index =0;
@@ -53,10 +56,13 @@ public class Dialogue : MonoBehaviour
     }
 
     IEnumerator TypeLine()
-    {
+    {    
+        lines[index] = lines[index].Contains("\\") ? lines[index].Replace("\\", "\n") :lines[index];
+
         foreach (char x in lines[index].ToCharArray())
         {
             textComponent.text += x;
+       
             yield return new WaitForSeconds(textSpeed);            
         }
     }
