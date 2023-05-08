@@ -14,7 +14,7 @@ public class EnableNight : MonoBehaviour
         lightObject = GameObject.Find("Lighter");
         lightSource = lightObject.GetComponent<Light>();
         collided = false;
-        animator = GameObject.Find("Player").GetComponent<Animator>();
+        animator = GameObject.Find("Harry").GetComponent<Animator>();
     }
     
     void OnTriggerEnter(Collider collider){
