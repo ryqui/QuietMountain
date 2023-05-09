@@ -32,7 +32,7 @@ public class PlayerStateMachine : StateMachine
         MainCamera = Camera.main.transform;
 
         InputReader = GetComponent<InputReader>();
-        Animator = GetComponent<Animator>();
+        Animator = GameObject.Find("Harry").GetComponent<Animator>();
         Controller = GetComponent<CharacterController>();
 
         SwitchState(new PlayerMoveState(this));
