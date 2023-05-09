@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+[RequireComponent(typeof(InputReader))]
 
 public class Dialogue : MonoBehaviour
 {
@@ -10,19 +11,35 @@ public class Dialogue : MonoBehaviour
     public float textSpeed;
     private int index;
     private bool collide = false;
+    public InputReader InputReader { get; private set; }
+    public Collider col { get; private set; }
+    public PlayerStateMachine playerStateMachine;
+    [SerializeField]
+    public bool preventMovement = true;
+    [SerializeField]
+    public bool removeAfterFinish = true;
     
+    void Start()
+    {   
+        col = GetComponent<Collider>(); 
+        InputReader = GetComponent<InputReader>();
+    }
 
-  void OnTriggerEnter(Collider other)
-    {      textComponent.text= string.Empty;
+    void OnTriggerEnter(Collider other)
+    {   
+        textComponent.text= string.Empty;
         if (other.CompareTag("Player")) 
-        {  collide = true;
-            StartDialogue();}
+        {  
+            collide = true;
+            //col.isTrigger =  stopMovement ? false : true ;
+            StartDialogue();
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0) && collide)
+        if(InputReader.interact == true && collide)
         {
             if(textComponent.text == lines[index])
             {
@@ -33,37 +50,52 @@ public class Dialogue : MonoBehaviour
                 StopAllCoroutines();
                 textComponent.text=lines[index];
             }
+
+            InputReader.interact = false;
         }
     }
 
-    void StartDialogue()
-    {   index =0;
- 
+    public void StartDialogue()
+    {   
+        index = 0;
+        if (preventMovement){
+            playerStateMachine = GameObject.Find("Player").GetComponent<PlayerStateMachine>();
+            playerStateMachine.DisableMovement();
+        }
         StartCoroutine(TypeLine());
     }
 
     IEnumerator TypeLine()
-    {
+    {    
+        lines[index] = lines[index].Contains("\\") ? lines[index].Replace("\\", "\n") :lines[index];
+
         foreach (char x in lines[index].ToCharArray())
         {
             textComponent.text += x;
+       
             yield return new WaitForSeconds(textSpeed);            
         }
     }
 
-void NextLine()
-{
-    if(index<lines.Length-1)
+    public void NextLine()
     {
-        index++;
-        textComponent.text= string.Empty;
-        StartCoroutine(TypeLine());
-    }
-    else
-    {   textComponent.text= string.Empty;
-        gameObject.SetActive(false);
-    }
+        if(index<lines.Length-1)
+        {
+            index++;
+            textComponent.text = string.Empty;
+            StartCoroutine(TypeLine());
+        }
+        else
+        {   
+            textComponent.text = string.Empty;
+            if (removeAfterFinish)
+                gameObject.SetActive(false);
+            
+            if (preventMovement){
+                playerStateMachine.EnableMovement();
+            }
+        }
 
-}
+    }
 
 }

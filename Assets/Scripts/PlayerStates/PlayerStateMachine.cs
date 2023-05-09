@@ -1,4 +1,5 @@
 using UnityEngine;
+using Cinemachine;
 
 [RequireComponent(typeof(InputReader))]
 [RequireComponent(typeof(Animator))]
@@ -9,12 +10,21 @@ public class PlayerStateMachine : StateMachine
     public float MovementSpeed { get;  set; } = 5f;
     public float DefaultSpeed { get;  private set; } 
     public float SprintSpeed { get; private set; } = 7f;
-    public static int Hp { get;  set; } = 100;
+    public static int Hp { get;  set; } = 1;
     public float LookRotationDampFactor { get; private set; } = 10f;
     public Transform MainCamera { get; private set; }
     public InputReader InputReader { get; private set; }
     public Animator Animator { get; private set; }
     public CharacterController Controller { get; private set; }
+    [SerializeField]
+    private CinemachineFreeLook freeLook;
+
+    public GameObject MainCameraObject;
+    public GameObject CutsceneCamera;
+    public GameObject CutscenePlayerCamera;
+
+    private Vector3 prevVelocity;
+    private float prevDefaultSpeed;
 
     void Start()
     {  
@@ -36,4 +46,24 @@ public class PlayerStateMachine : StateMachine
 
     }
     
+    public void DisableMovement(){
+        Debug.Log("Disabling player movement.");
+        prevVelocity = Velocity;
+        prevDefaultSpeed = DefaultSpeed;
+        MovementSpeed = 0f;
+        DefaultSpeed = 0f;
+        SprintSpeed = 0f;
+        Velocity = new Vector3(0f,0f,0f);
+        freeLook.enabled = false;
+    }
+
+    public void EnableMovement(){
+        Debug.Log("Enabling player movement.");
+        Velocity = prevVelocity;
+        MovementSpeed = 5f;
+        DefaultSpeed = prevDefaultSpeed;
+        SprintSpeed = 7f;
+        Velocity = prevVelocity;
+        freeLook.enabled = true;
+    }
 }
