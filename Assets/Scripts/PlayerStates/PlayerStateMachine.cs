@@ -19,6 +19,13 @@ public class PlayerStateMachine : StateMachine
     [SerializeField]
     private CinemachineFreeLook freeLook;
 
+    public GameObject MainCameraObject;
+    public GameObject CutsceneCamera;
+    public GameObject CutscenePlayerCamera;
+
+    private Vector3 prevVelocity;
+    private float prevDefaultSpeed;
+
     void Start()
     {  
         DefaultSpeed = MovementSpeed;
@@ -39,14 +46,24 @@ public class PlayerStateMachine : StateMachine
 
     }
     
-    public void StartCutscene(){
+    public void DisableMovement(){
         Debug.Log("Disabling player movement.");
-        Vector3 prevVelocity = Velocity;
-        float prevDefaultSpeed = DefaultSpeed;
+        prevVelocity = Velocity;
+        prevDefaultSpeed = DefaultSpeed;
         MovementSpeed = 0f;
         DefaultSpeed = 0f;
         SprintSpeed = 0f;
         Velocity = new Vector3(0f,0f,0f);
         freeLook.enabled = false;
+    }
+
+    public void EnableMovement(){
+        Debug.Log("Enabling player movement.");
+        Velocity = prevVelocity;
+        MovementSpeed = 5f;
+        DefaultSpeed = prevDefaultSpeed;
+        SprintSpeed = 7f;
+        Velocity = prevVelocity;
+        freeLook.enabled = true;
     }
 }

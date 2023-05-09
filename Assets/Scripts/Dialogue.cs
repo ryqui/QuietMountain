@@ -12,46 +12,56 @@ public class Dialogue : MonoBehaviour
     private int index;
     private bool collide = false;
     public InputReader InputReader { get; private set; }
-    public bool stopMovement = true; 
     public Collider col { get; private set; }
+    public PlayerStateMachine playerStateMachine;
+    [SerializeField]
+    public bool preventMovement = true;
+    [SerializeField]
+    public bool removeAfterFinish = true;
     
     void Start()
-    {   col = GetComponent<Collider>(); 
+    {   
+        col = GetComponent<Collider>(); 
         InputReader = GetComponent<InputReader>();
     }
-  void OnTriggerEnter(Collider other)
+
+    void OnTriggerEnter(Collider other)
     {   
         textComponent.text= string.Empty;
         if (other.CompareTag("Player")) 
-        {  collide = true;
-            col.isTrigger =  stopMovement ? false : true ;
-            StartDialogue();}
+        {  
+            collide = true;
+            //col.isTrigger =  stopMovement ? false : true ;
+            StartDialogue();
+        }
     }
 
     // Update is called once per frame
-  void Update()
-{
-    if(InputReader.interact == true && collide)
+    void Update()
     {
-        if(textComponent.text == lines[index])
+        if(InputReader.interact == true && collide)
         {
-            NextLine();
-        }
-        else
-        {
-            StopAllCoroutines();
-            textComponent.text=lines[index];
-        }
-       
+            if(textComponent.text == lines[index])
+            {
+                NextLine();
+            }
+            else
+            {
+                StopAllCoroutines();
+                textComponent.text=lines[index];
+            }
 
-        InputReader.interact = false;
+            InputReader.interact = false;
+        }
     }
-}
 
-
-    void StartDialogue()
-    {   index =0;
-
+    public void StartDialogue()
+    {   
+        index = 0;
+        if (preventMovement){
+            playerStateMachine = GameObject.Find("Player").GetComponent<PlayerStateMachine>();
+            playerStateMachine.DisableMovement();
+        }
         StartCoroutine(TypeLine());
     }
 
@@ -67,20 +77,25 @@ public class Dialogue : MonoBehaviour
         }
     }
 
-void NextLine()
-{
-    if(index<lines.Length-1)
+    public void NextLine()
     {
-        index++;
-        textComponent.text= string.Empty;
-        StartCoroutine(TypeLine());
-    }
-    else
-    {   textComponent.text= string.Empty;
-        gameObject.SetActive(false);
-        
-    }
+        if(index<lines.Length-1)
+        {
+            index++;
+            textComponent.text = string.Empty;
+            StartCoroutine(TypeLine());
+        }
+        else
+        {   
+            textComponent.text = string.Empty;
+            if (removeAfterFinish)
+                gameObject.SetActive(false);
+            
+            if (preventMovement){
+                playerStateMachine.EnableMovement();
+            }
+        }
 
-}
+    }
 
 }
