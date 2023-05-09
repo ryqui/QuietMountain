@@ -12,7 +12,7 @@ public class FollowObject : MonoBehaviour
     {
         //initial offset
         transform.position = leader.position;
-        _followOffset = new Vector3(1f, 0f, 0f);
+        _followOffset = new Vector3(0f, 0f, 0f);
     }
 
     void LateUpdate () 
@@ -23,5 +23,6 @@ public class FollowObject : MonoBehaviour
         targetPosition.y = transform.position.y;
 
         transform.position += targetPosition - transform.position;
+        transform.rotation = leader.rotation;
     }
 }
