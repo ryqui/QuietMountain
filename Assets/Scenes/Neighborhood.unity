@@ -374,33 +374,25 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 20727530, guid: 0a0ea88e22dd519489a135ea03b9b4ef, type: 3}
-      propertyPath: m_UiScaleMode
-      value: 1
+    - target: {fileID: 20727527, guid: 0a0ea88e22dd519489a135ea03b9b4ef, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 208984180, guid: 0a0ea88e22dd519489a135ea03b9b4ef, type: 3}
       propertyPath: textComponent
       value: 
       objectReference: {fileID: 2113618219}
     - target: {fileID: 275296594, guid: 0a0ea88e22dd519489a135ea03b9b4ef, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 275296594, guid: 0a0ea88e22dd519489a135ea03b9b4ef, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
+      propertyPath: m_AnchoredPosition.y
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 307792652, guid: 0a0ea88e22dd519489a135ea03b9b4ef, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
+      propertyPath: m_AnchoredPosition.y
+      value: 103
       objectReference: {fileID: 0}
-    - target: {fileID: 307792652, guid: 0a0ea88e22dd519489a135ea03b9b4ef, type: 3}
-      propertyPath: m_AnchorMin.y
+    - target: {fileID: 580281963, guid: 0a0ea88e22dd519489a135ea03b9b4ef, type: 3}
+      propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 580281966, guid: 0a0ea88e22dd519489a135ea03b9b4ef, type: 3}
-      propertyPath: m_UiScaleMode
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 607107531, guid: 0a0ea88e22dd519489a135ea03b9b4ef, type: 3}
       propertyPath: m_SceneBindings.Array.data[0].value
@@ -422,9 +414,9 @@ PrefabInstance:
       propertyPath: m_ExposedReferences.m_References.Array.data[9].second
       value: 
       objectReference: {fileID: 508030932}
-    - target: {fileID: 782448018, guid: 0a0ea88e22dd519489a135ea03b9b4ef, type: 3}
-      propertyPath: m_UiScaleMode
-      value: 1
+    - target: {fileID: 782448015, guid: 0a0ea88e22dd519489a135ea03b9b4ef, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1019483687, guid: 0a0ea88e22dd519489a135ea03b9b4ef, type: 3}
       propertyPath: textComponent
@@ -451,28 +443,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 508030932}
     - target: {fileID: 1240659007, guid: 0a0ea88e22dd519489a135ea03b9b4ef, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1240659007, guid: 0a0ea88e22dd519489a135ea03b9b4ef, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
+      propertyPath: m_AnchoredPosition.y
+      value: 166
       objectReference: {fileID: 0}
     - target: {fileID: 1266083401, guid: 0a0ea88e22dd519489a135ea03b9b4ef, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
+      propertyPath: m_AnchoredPosition.y
+      value: 103
       objectReference: {fileID: 0}
-    - target: {fileID: 1266083401, guid: 0a0ea88e22dd519489a135ea03b9b4ef, type: 3}
-      propertyPath: m_AnchorMin.y
+    - target: {fileID: 1721502132, guid: 0a0ea88e22dd519489a135ea03b9b4ef, type: 3}
+      propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1721502135, guid: 0a0ea88e22dd519489a135ea03b9b4ef, type: 3}
-      propertyPath: m_UiScaleMode
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2513888938446839, guid: 0a0ea88e22dd519489a135ea03b9b4ef, type: 3}
-      propertyPath: m_UiScaleMode
-      value: 1
+      propertyPath: m_ScreenMatchMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2513888938446839, guid: 0a0ea88e22dd519489a135ea03b9b4ef, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2513888938446839, guid: 0a0ea88e22dd519489a135ea03b9b4ef, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 176387854542950076, guid: 0a0ea88e22dd519489a135ea03b9b4ef, type: 3}
       propertyPath: m_SceneBindings.Array.data[6].value
@@ -494,12 +486,16 @@ PrefabInstance:
       propertyPath: textComponent
       value: 
       objectReference: {fileID: 2113618219}
-    - target: {fileID: 2275472682187624012, guid: 0a0ea88e22dd519489a135ea03b9b4ef, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
+    - target: {fileID: 2061434367925329547, guid: 0a0ea88e22dd519489a135ea03b9b4ef, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2275472682187624012, guid: 0a0ea88e22dd519489a135ea03b9b4ef, type: 3}
-      propertyPath: m_AnchorMin.y
+      propertyPath: m_AnchoredPosition.y
+      value: 166
+      objectReference: {fileID: 0}
+    - target: {fileID: 2589030921201807584, guid: 0a0ea88e22dd519489a135ea03b9b4ef, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7068751866165481620, guid: 0a0ea88e22dd519489a135ea03b9b4ef, type: 3}
