@@ -1,5 +1,6 @@
 using UnityEngine;
 using Cinemachine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(InputReader))]
 [RequireComponent(typeof(Animator))]
@@ -42,7 +43,11 @@ public class PlayerStateMachine : StateMachine
     public static void TakeDamage(int damage){
         Hp -= damage; 
         if(Hp <= 0)
+        { 
          GameObject.FindGameObjectWithTag("Player").SetActive(false); 
+         SceneManager.LoadScene(4);  
+
+        }
 
     }
     
@@ -66,4 +71,13 @@ public class PlayerStateMachine : StateMachine
         Velocity = prevVelocity;
         freeLook.enabled = true;
     }
+
+         void OnTriggerEnter(Collider other)
+    {   
+        if (other.CompareTag("ToAlley")) 
+             SceneManager.LoadScene(3);   
+    }
+
+
+
 }
