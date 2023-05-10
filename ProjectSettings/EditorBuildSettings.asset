@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 0beaf91135ea449d885030a0638c2e56
+  - enabled: 1
+    path: Assets/Scenes/Alley.unity
+    guid: 79436122302c3194f831ed86dc035acb
   m_configObjects: {}
