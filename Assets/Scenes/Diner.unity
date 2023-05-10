@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!224 &10283606 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 121623590778495829, guid: cad51db69ea69ba40967b68ea795b6fb, type: 3}
-  m_PrefabInstance: {fileID: 803222556}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &60922134 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6584944384833748308, guid: 60b0794b9123c534e9c2a68cad48fd0f, type: 3}
@@ -364,8 +359,12 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 2
-    m_TransformParent: {fileID: 1871551018}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 121623589466052034, guid: cad51db69ea69ba40967b68ea795b6fb, type: 3}
+      propertyPath: m_text
+      value: Press 'e' to pick up item
+      objectReference: {fileID: 0}
     - target: {fileID: 121623590778495829, guid: cad51db69ea69ba40967b68ea795b6fb, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -376,7 +375,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 121623590778495829, guid: cad51db69ea69ba40967b68ea795b6fb, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 121623590778495829, guid: cad51db69ea69ba40967b68ea795b6fb, type: 3}
       propertyPath: m_AnchorMax.x
@@ -845,7 +844,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908252915130495732, guid: 184826390d35f7844b01203a3f139995, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0000038146973
+      value: -0.0000019073486
       objectReference: {fileID: 0}
     - target: {fileID: 2908252915130495732, guid: 184826390d35f7844b01203a3f139995, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1129,7 +1128,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1846223664
 GameObject:
@@ -1225,11 +1224,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!4 &1871551018 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7848532313399530852, guid: 60b0794b9123c534e9c2a68cad48fd0f, type: 3}
-  m_PrefabInstance: {fileID: 8004645401734220589}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2061343921 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7407307628457858943, guid: 60b0794b9123c534e9c2a68cad48fd0f, type: 3}
@@ -1626,11 +1620,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7538058104076197116, guid: 60b0794b9123c534e9c2a68cad48fd0f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.53
+      value: -6.61
       objectReference: {fileID: 0}
     - target: {fileID: 7538058104076197116, guid: 60b0794b9123c534e9c2a68cad48fd0f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -12.41
+      value: -15.19
       objectReference: {fileID: 0}
     - target: {fileID: 7538058104335761734, guid: 60b0794b9123c534e9c2a68cad48fd0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1654,7 +1648,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7848532313399530852, guid: 60b0794b9123c534e9c2a68cad48fd0f, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7848532313399530852, guid: 60b0794b9123c534e9c2a68cad48fd0f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1737,8 +1731,5 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 88cab16bdf37bd34392258971e7a74b7, type: 2}
     m_RemovedComponents: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 7848532313399530852, guid: 60b0794b9123c534e9c2a68cad48fd0f, type: 3}
-      insertIndex: 0
-      addedObject: {fileID: 10283606}
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 60b0794b9123c534e9c2a68cad48fd0f, type: 3}
