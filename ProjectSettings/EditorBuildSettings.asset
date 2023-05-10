@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Alley.unity
     guid: 79436122302c3194f831ed86dc035acb
+  - enabled: 1
+    path: Assets/Scenes/Diner.unity
+    guid: dc7855d67eb19624b90570f233add824
   m_configObjects: {}
