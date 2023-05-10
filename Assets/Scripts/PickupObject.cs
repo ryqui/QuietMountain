@@ -9,6 +9,8 @@ public class PickupObject : MonoBehaviour
 
     [SerializeField]
     public GameObject pickupDialogue;
+    [SerializeField]
+    public bool removeObject = true;
 
     void Start(){
         InputReader = GetComponent<InputReader>();
@@ -24,7 +26,7 @@ public class PickupObject : MonoBehaviour
 
     void OnTriggerStay(Collider collider){
         if (collider.name == "Player")
-            if (InputReader.interact == true){
+            if (InputReader.interact == true && removeObject){
                 gameObject.SetActive(false);
                 pickupDialogue.SetActive(false);
                 InputReader.interact = false;
