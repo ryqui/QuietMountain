@@ -10,6 +10,9 @@ public class PlayCutscene : MonoBehaviour
     [SerializeField]
     private GameObject blackCamera = null;
 
+    [SerializeField]
+    private GameObject blackLines = null;
+
     private int animationIndex = 0;
 
     private PlayerStateMachine player;
@@ -65,5 +68,9 @@ public class PlayCutscene : MonoBehaviour
 
     public void RemoveDialogue(){
         cutscenesToPlay[animationIndex].GetComponent<RunDialogScript>().RemoveDialogue();
+    }
+
+    public void RemoveBlackLiens(){
+        blackLines.SetActive(false);
     }
 } 
